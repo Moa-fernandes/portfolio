@@ -1,0 +1,54 @@
+.hero-section {
+  padding: 4rem 2rem;
+  background-color: #0d1117;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  color: #8b1949;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #0b315c;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
+.hero-img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.hero-title {
+  color: #ffffff; /* Branco puro */
+  font-weight: 700; /* Negrito */
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif; /* Ou outra fonte elegante */
+  margin-bottom: 1rem;
+  animation: fadeIn 1.2s ease;
+}
+
+.hero-subtitle {
+  color: #87c9ff; /* Azul regular do GitHub */
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,9 @@
+<!-- walker.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="16" r="6" fill="#FFD700"/>
+  <rect x="28" y="22" width="8" height="18" fill="#00FFC3"/>
+  <path d="M28 40L24 52" stroke="#00FFC3" stroke-width="4"/>
+  <path d="M36 40L40 52" stroke="#00FFC3" stroke-width="4"/>
+  <path d="M28 30L22 38" stroke="#00FFC3" stroke-width="3"/>
+  <path d="M36 30L42 38" stroke="#00FFC3" stroke-width="3"/>
+</svg>
