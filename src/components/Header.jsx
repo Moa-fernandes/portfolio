@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Header.css';
-import { FaUserAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
@@ -12,21 +12,19 @@ export default function Header() {
   return (
     <>
       <header className="navbar">
-  <nav className="navbar-center">
-    <ul>
-      <li><a onClick={openGitHub}>Projetos / Projects</a></li>
-      <li><a onClick={() => setShowModal(true)}>Contato / Contact</a></li>
-    </ul>
-  </nav>
+        <nav className="navbar-center">
+          <ul>
+            <li><a onClick={openGitHub}>Projetos / Projects</a></li>
+          </ul>
+        </nav>
 
-  <div className="navbar-right-with-arrow">
-    <div className="arrow-5d">➤</div>
-    <button className="btn-4d" onClick={() => setShowModal(true)}>
-      Talk to Me
-    </button>
-  </div>
-</header>
-
+        <div className="navbar-right-with-arrow">
+          <div className="arrow-5d">➤</div>
+          <button className="btn-4d" onClick={() => setShowModal(true)}>
+            If you have any questions, just hit me up!
+          </button>
+        </div>
+      </header>
 
       {showModal && (
         <div className="modal-backdrop" onClick={() => setShowModal(false)}>
@@ -34,10 +32,11 @@ export default function Header() {
             <button className="modal-close" onClick={() => setShowModal(false)}>×</button>
             <div className="modal-content">
               <div className="modal-info">
-                <h2>📬 Contact:</h2>
-                <p><FaUserAlt /> Moacir Fernandes</p>
-                <p><FaPhoneAlt /> 21 9 7301-9585</p>
-                <p><FaEnvelope /> moacirsistemax@gmail.com</p>
+                <h2>📬 Hit Me Up:</h2>
+                <p><a href="mailto:moacirsistemax@gmail.com" target="_blank" rel="noopener noreferrer"><FaEnvelope /> moacirsistemax@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/moacir-fernandes-ba0a97a0/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a></p>
+                <p><a href="https://github.com/Moa-fernandes" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a></p>
+                <p><a href="https://wa.me/5521973019585" target="_blank" rel="noopener noreferrer"><FaWhatsapp /> WhatsApp</a></p>
               </div>
               <div className="modal-img">
                 <img src="/moa3.gif" alt="Moa animado" />

@@ -116,27 +116,44 @@
   align-items: center;
 }
 
-.modal-info {
-  flex: 1;
-  color: #ffffff;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.modal-info a:hover {
+  color: #00ffc3;
 }
 
-.modal-img {
-  flex: 1;
+.modal-info a {
+  color: #ffffff !important;
+  text-decoration: none;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.modal-info a:hover {
+  color: #00ffc3 !important;
+}
+
+.modal-info svg {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+
+.modal-info svg {
+  color: white;
+  font-size: 1.2rem;
 }
 
 .modal-img img {
-  width: 150px;
+  width: 220px; /* ou maior conforme necessário */
+  max-width: 100%;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,255,200,0.4);
   animation: floatY 10s ease-in-out infinite;
 }
+
 
 .modal-close {
   position: absolute;
