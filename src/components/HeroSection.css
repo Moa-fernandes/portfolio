@@ -70,3 +70,21 @@
   margin-top: 0.5rem;
   line-height: 1.6;
 }
+
+.btn-cv {
+  background-color: #c0cdf8;
+  color: #c0cdf8;
+  padding: 0.8rem 1.9rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  position: relative; /* permite top/left/right/bottom */
+  margin: 0.8rem; /* controle de espaçamento externo */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-cv:hover {
+  transform: scale(1.05);
+  background-color: #58a6ff;
+}

@@ -19,6 +19,7 @@ export default function Footer() {
           <FaWhatsapp />
         </a>
       </div>
+    
       <p>&copy; 2025 Moacir Fernandes. Todos os direitos reservados.</p>
     </footer>
   );

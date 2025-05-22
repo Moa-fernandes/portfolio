@@ -12,6 +12,10 @@ export default function HeroSection() {
           Front-End focused in UI/UX
         </p>
 
+          <a href="/Moacir-Fernandes-CV.pdf" download className="btn-cv">
+            📄 Download CV
+          </a>
+
         </div>
         <img src="/Moacir.png" alt="Moacir Fernandes" className="hero-img" />
       </div>
