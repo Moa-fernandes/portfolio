@@ -17,11 +17,6 @@ export default function Projects() {
     return (
       <div className="loading-bar-container">
         <div className="loading-track">
-          <img
-            src="/walker.svg" // você pode trocar para qualquer SVG ou PNG animado
-            alt="Walker"
-            className="walker"
-          />
         </div>
       </div>
     );
