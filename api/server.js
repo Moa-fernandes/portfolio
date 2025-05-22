@@ -2,6 +2,14 @@ const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 
+const agentPrompts = {
+  ideator: `You are a creative idea generator. Respond as such:`,
+  coder: `You are a skilled developer. Write code when needed.`,
+  reviewer: `You're a UX expert. Review the following concept:`
+};
+const fullPrompt = `${agentPrompts[activeAgent]}\n${userInput}`;
+
+
 const app = express();
 app.use(cors());
 app.use(express.json());

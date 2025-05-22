@@ -16,7 +16,7 @@ export default function Header() {
       <header className="navbar">
         <div className="navbar-left">
           <button className="btn-4d" onClick={() => setShowAgent(true)}>
-            🤖 Talk to Agent -  A.I full offline? Yeah. We have. 🤖
+            🤖 Talk to Agent  🤖
           </button>
         </div>
 
