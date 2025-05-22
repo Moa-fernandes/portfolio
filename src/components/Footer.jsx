@@ -20,7 +20,7 @@ export default function Footer() {
         </a>
       </div>
     
-      <p>&copy; 2025 Moacir Fernandes. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Moacir Fernandes. All Rights Reserved.</p>
     </footer>
   );
 }
