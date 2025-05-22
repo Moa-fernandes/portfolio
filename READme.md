@@ -150,3 +150,104 @@ Este portfólio conta agora com um **agente de IA local** que roda diretamente n
 ## ⚡ Vamos Construir Algo Incrível???
 
 Estou sempre aberto a colaborações interessantes — seja para criar interfaces impactantes, resolver desafios técnicos no back-end, integrar ferramentas de IA ou entregar produtos completos com performance e estilo. Bora conversar? 🚀
+
+
+## ####################################################################### ################################
+
+## 🇧🇷 Instruções de Uso
+
+### 🎯 Requisitos
+
+* Node.js
+* Docker
+* Sanity CLI (`npm install -g sanity`)
+* Ollama (opcional para uso local do agente IA)
+
+---
+
+### 📁 1. Portfólio Front-End (`/`)
+
+```bash
+npm install
+npm run dev
+```
+
+### ⚙️ 2. API do Agente (`/api`)
+
+```bash
+cd api
+npm install
+node server.js
+```
+
+> Essa API se comunica com o Ollama local na porta `11434`. Certifique-se de ter o modelo `gemma:2b` carregado via `ollama pull gemma:2b` e rodando com `ollama run gemma:2b`.
+
+---
+
+### 🧠 3. CMS Sanity (`/portfoliomoacms`)
+
+```bash
+cd portfoliomoacms
+npm install
+npm run dev  # Acessar via http://localhost:3333
+npx sanity deploy  # Para publicar no sanity.studio
+```
+
+---
+
+### 🐳 4. Docker (Build & Run)
+
+```bash
+docker build -t portfolio-react .
+docker run -p 80:80 portfolio-react
+```
+
+---
+
+## 🇺🇸 Usage Instructions
+
+### 🎯 Requirements
+
+* Node.js
+* Docker
+* Sanity CLI (`npm install -g sanity`)
+* Ollama (optional for offline local AI)
+
+---
+
+### 📁 1. Portfolio Front-End (`/`)
+
+```bash
+npm install
+npm run dev
+```
+
+### ⚙️ 2. Agent API (`/api`)
+
+```bash
+cd api
+npm install
+node server.js
+```
+
+> This API talks to local Ollama at port `11434`. Make sure you have the `gemma:2b` model pulled with `ollama pull gemma:2b` and running via `ollama run gemma:2b`.
+
+---
+
+### 🧠 3. Sanity CMS (`/portfoliomoacms`)
+
+```bash
+cd portfoliomoacms
+npm install
+npm run dev  # Open on http://localhost:3333
+npx sanity deploy  # Deploy to sanity.studio
+```
+
+---
+
+### 🐳 4. Docker (Build & Run)
+
+```bash
+docker build -t portfolio-react .
+docker run -p 80:80 portfolio-react
+```
