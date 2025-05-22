@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import './Header.css';
 import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import AgentModal from '../components/AgentModal'; // ajuste o caminho se necessário
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
+  const [showAgent, setShowAgent] = useState(false);
 
   const openGitHub = () => {
     window.open("https://github.com/Moa-fernandes", "_blank");
@@ -12,6 +14,12 @@ export default function Header() {
   return (
     <>
       <header className="navbar">
+        <div className="navbar-left">
+          <button className="btn-4d" onClick={() => setShowAgent(true)}>
+            🤖 Talk to Agent
+          </button>
+        </div>
+
         <nav className="navbar-center">
           <ul>
             <li><a onClick={openGitHub}>Projetos / Projects</a></li>
@@ -42,6 +50,8 @@ export default function Header() {
           </div>
         </div>
       )}
+
+      {showAgent && <AgentModal onClose={() => setShowAgent(false)} />}
     </>
   );
 }

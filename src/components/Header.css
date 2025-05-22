@@ -347,3 +347,9 @@
   box-shadow: 0 0 20px rgba(0, 255, 200, 0.4);
   animation: floatY 10s ease-in-out infinite;
 }
+
+.navbar-left {
+  position: absolute;
+  left: 2rem;
+  top: 0.5rem;
+}
