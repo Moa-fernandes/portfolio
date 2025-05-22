@@ -1,5 +1,4 @@
 
-/* === NAVBAR === */
 .navbar {
   background-color: #161b22;
   padding: 1rem 2rem;
@@ -58,14 +57,7 @@
   50% { box-shadow: 0 0 10px rgba(46,160,67,0.7); }
 }
 
-/* === TÍTULO === */
-.animated-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #f5f5f5;
-  animation: fadeInSlide 1.5s ease forwards;
-  opacity: 0;
-}
+
 
 @keyframes fadeInSlide {
   from {
@@ -92,13 +84,13 @@
   z-index: 999;
 }
 
-.modal-3d-contact,
-.modal-centered {
+.modal-3d-contact {
+  background: url('/moa.gif') center center / cover no-repeat;
   display: flex;
+  top: -100px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #0d1117;
+  align-items: left;
+  justify-content: left;
   border: 2px solid #00ffc3;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 255, 200, 0.3);
@@ -107,7 +99,10 @@
   width: 90%;
   animation: zoomIn 0.6s ease-out;
   position: relative;
+  color: rgb(194, 231, 197);
+  overflow: hidden;
 }
+
 
 .modal-content {
   display: flex;
@@ -146,7 +141,7 @@
 }
 
 .modal-img img {
-  width: 220px; /* ou maior conforme necessário */
+  width: 100px; /* ou maior conforme necessário */
   max-width: 100%;
   height: auto;
   border-radius: 12px;
@@ -191,24 +186,6 @@
     opacity: 1;
   }
 }
-
-.gold-3d-text {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #ffd700, #fff0b3, #ffd700);
-  background-size: 200% auto;
-  color: #fdf6e3;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: goldenflow 4s linear infinite, floatY 3s ease-in-out infinite;
-  text-shadow: 1px 1px 4px rgba(255, 215, 0, 0.5);
-}
-
-@keyframes goldenflow {
-  0% { background-position: 200% center; }
-  100% { background-position: 0% center; }
-}
-
 
 
 .btn-4d {
@@ -359,4 +336,14 @@
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
+}
+
+
+.modal-gif {
+  width: 620px;
+  max-width: 400%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.4);
+  animation: floatY 10s ease-in-out infinite;
 }

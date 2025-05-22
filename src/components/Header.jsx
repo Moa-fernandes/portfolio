@@ -38,9 +38,6 @@ export default function Header() {
                 <p><a href="https://github.com/Moa-fernandes" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a></p>
                 <p><a href="https://wa.me/5521973019585" target="_blank" rel="noopener noreferrer"><FaWhatsapp /> WhatsApp</a></p>
               </div>
-              <div className="modal-img">
-                <img src="/moa3.gif" alt="Moa animado" />
-              </div>
             </div>
           </div>
         </div>
