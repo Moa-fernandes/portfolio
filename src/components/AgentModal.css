@@ -82,3 +82,8 @@ textarea {
 }
 
 
+.agent-selector button.active-agent {
+  background-color: #ff9800; /* Laranja */
+  border-color: #ff9800;
+  color: #000; /* Contraste para leitura */
+}

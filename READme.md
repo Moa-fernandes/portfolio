@@ -1,185 +1,151 @@
+
 # 👨‍💻 Moacir Fernandes
 
-### FullStack Developer | Front-End UI/UX Specialist | AI Integrator
+### FullStack Developer | Front-End UI/UX Specialist | AI Agent Integrator
 
-Hello! I'm **Moacir Fernandes**, a FullStack developer who blends visual elegance with powerful engineering. With strong roots in **UI/UX-centric front-end development** and solid experience in **back-end and cloud infrastructure**, I build complete, scalable, and intelligent applications — from design system to deployment.
+Hello! I'm **Moacir Fernandes**, a FullStack developer who merges intuitive design with solid architecture. With strong experience in **front-end UI/UX development**, **cloud deployment**, and now **local AI agent integration**, I deliver elegant and efficient solutions that scale from concept to production.
 
 ---
 
-## 🚀 About Me
+## 🚀 Latest Feature: Local AI Agent Powered by Ollama
 
-I specialize in crafting end-to-end digital products that merge clean design with functional depth. Whether it's building responsive UIs, integrating with external APIs, or deploying scalable apps on cloud platforms, I bring technical precision with creative sensitivity.
+This portfolio now features a real-time, **local AI-powered agent** using [Ollama](https://ollama.com), an open-source LLM runtime that allows you to run large language models on your own machine without relying on cloud APIs.
 
-I also have hands-on experience developing **AI-driven solutions**, deploying and integrating **agents**, working with **LLM pipelines**, and leveraging machine learning frameworks in real-world applications.
+### 🔌 What It Does
+- 🌐 Runs LLMs locally (no API costs or network dependency)
+- 🤖 Integrates models like `gemma:2b` for natural language tasks
+- 🧠 Enables multi-role agents: **Ideator**, **Coder**, and **Reviewer**
+- 💬 Interacts via a modal interface inside the portfolio
+
+### 🛠️ How It Works
+- Backend (`Express.js`) runs on `http://localhost:3001`
+- Routes `/api/agent` proxy user messages to Ollama (`http://localhost:11434/api/generate`)
+- Model: `gemma:2b` pulled locally and served
+- Front-end React component handles UX and displays responses
 
 ---
 
 ## 🧠 Tech Stack Overview
 
 ### 🎨 Front-End (UI/UX-Focused)
-- **React.js**, **Next.js**, **TypeScript**, **Vite**
-- **Tailwind CSS**, **SASS**, **Styled Components**
-- **Framer Motion**, **Figma to Code**, **Accessibility (a11y)**
-- **Sanity CMS** for dynamic content management
+- **React.js**, **Vite**, **TypeScript**
+- **Styled Components**, **CSS Modules**
+- **Framer Motion**, **Custom Modals**
+- Responsive, animated, accessible
 
 ### ⚙️ Back-End & APIs
-- **Node.js**, **Express.js**, **NestJS**
-- **RESTful APIs**, **GraphQL**, **JWT / OAuth2 authentication**
-- **PostgreSQL**, **MongoDB**, **Prisma ORM**, **Sequelize**
-- **Redis** for caching and session management
+- **Node.js**, **Express**
+- **Custom API Routing**
+- **Ollama integration via HTTP POST**
 
-### 🤖 AI & Machine Learning
-- **PyTorch**, **LangChain**, **AutoGen**, **CrewAI**, **AgentOps**
-- ChatGPT & GPT-4 integration via OpenAI API
-- Embedding, retrieval, semantic search & memory agents
-- Prompt engineering, chaining, and tool use
-
-### ☁️ DevOps & Cloud
-- **AWS EC2**, **Elastic Beanstalk**, **S3**, **CloudFront**
-- **Docker**, **Docker Compose**
-- **Vercel**, **Render**, **Netlify** for serverless/front-end deploys
-- **CI/CD pipelines** with **GitHub Actions**
-
-### 🧰 Tools & Dev Experience
-- **Postman** for API testing and documentation
-- **Git** (branching strategies, semantic commits)
-- **GitHub** (pull requests, actions, discussions)
-- **Jira**, **Trello**, **Notion** for team and product management
-- **ESLint**, **Prettier**, and custom linter setups
+### 🤖 AI & LLM Tools
+- **Ollama**: lightweight local inference runtime
+- **gemma:2b** model (Google-backed LLM)
+- Agent roles: **Ideator**, **Coder**, **Reviewer**
+- Prompt-to-response integration without cloud billing
 
 ---
 
-## 🧩 Engineering Approach
+## 💻 Folder Structure Highlight
 
-- 🎨 **Design-Oriented**: Start with structure, spacing, and visual rhythm
-- ⚙️ **Code as Architecture**: Modular, layered, and maintainable systems
-- 👁 **User Empathy**: Every click, animation, and delay matters
-- 🧪 **Test-Driven** (when possible): Unit and integration tests for confidence
-- ⚡ **Performance-Aware**: Lazy loading, code splitting, and optimization strategies
-
----
-
-## 📂 Featured Project Types
-
-- 🌐 Admin dashboards and internal tools
-- 🤖 AI assistants and autonomous agents
-- 🔐 Auth systems (role-based, multi-tenant)
-- 📱 Responsive web apps with full mobile fidelity
-- 🌍 Headless CMS with **Sanity**, SSR/SSG using **Next.js**
+```
+/api
+  └── server.js         ← Express server w/ Ollama integration
+/src/components
+  └── AgentModal.jsx    ← Talk to Agent UI logic
+```
 
 ---
 
-## 🧠 Additional Notes
+## 💡 Real Use Case
 
-- I routinely use **Postman** to model APIs and validate flows before coding
-- With **Sanity**, I structure flexible content systems for marketing & blogs
-- My cloud deployments have included **EC2 with Docker**, **Elastic Beanstalk for Node apps**, and **S3 for static assets**
-- I enjoy optimizing both **developer experience** and **user experience**
+This portfolio showcases how you can **embed autonomous agents directly into user interfaces**, making it perfect for:
+
+- Portfolios and product showcases
+- Internal dashboards
+- AI assistants without API dependency
 
 ---
 
-## 📫 Reach Me
+## 📫 Let's Connect
 
 - 📧 Email: [moacirsistemax@gmail.com](mailto:moacirsistemax@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/moacir-fernandes-ba0a97a0](https://www.linkedin.com/in/moacir-fernandes-ba0a97a0/)
 - 🧑‍💻 GitHub: [@Moa-fernandes](https://github.com/Moa-fernandes)
-- 📱 WhatsApp: [+55 21 97301-9585](https://wa.me/5521973019585)
+- 💼 LinkedIn: [Moacir Fernandes](https://www.linkedin.com/in/moacir-fernandes-ba0a97a0/)
+
 
 ---
-
-## ⚡ Let’s Build Something Meaningful
-
-I’m always open to exciting collaborations — whether it’s building beautiful UIs, solving tough back-end logic, integrating AI tools, or shipping polished features at scale. Let’s connect and create together.
 
 
 # 👨‍💻 Moacir Fernandes
 
-### Desenvolvedor FullStack | Especialista em UI/UX no Front-End | Integrador de IA
+### Desenvolvedor FullStack | Especialista em UI/UX | Integrador de Agentes de IA Locais
 
-Olá! Sou **Moacir Fernandes**, um desenvolvedor FullStack que combina elegância visual com engenharia de alto nível. Com base sólida em **desenvolvimento front-end focado em UI/UX** e ampla experiência em **back-end e infraestrutura em nuvem**, construo aplicações completas, escaláveis e inteligentes — do design system ao deploy.
-
----
-
-## 🚀 Sobre Mim
-
-Tenho paixão por criar produtos digitais completos, que unem design limpo e funcionalidade real. Seja construindo interfaces responsivas, integrando APIs externas ou implantando soluções em nuvem, trago precisão técnica com sensibilidade criativa.
-
-Também tenho experiência prática com **soluções baseadas em IA**, incluindo agentes autônomos, pipelines de LLMs e frameworks de machine learning aplicados a produtos reais.
+Sou **Moacir Fernandes**, desenvolvedor fullstack com paixão por design e engenharia, agora incorporando agentes de IA locais com **Ollama** diretamente no meu portfólio — sem dependência de APIs externas.
 
 ---
 
-## 🧠 Tecnologias e Ferramentas
+## 🤖 Recurso Mais Recente: Agente de IA Local com Ollama
 
-### 🎨 Front-End (foco em UI/UX)
-- **React.js**, **Next.js**, **TypeScript**, **Vite**
-- **Tailwind CSS**, **SASS**, **Styled Components**
-- **Framer Motion**, **Figma to Code**, **Acessibilidade (a11y)**
-- **Sanity CMS** para gestão de conteúdo headless
+Este portfólio conta agora com um **agente de IA local** que roda diretamente na sua máquina usando [Ollama](https://ollama.com), ideal para testes rápidos, sem limites ou custos de API.
 
-### ⚙️ Back-End & APIs
-- **Node.js**, **Express.js**, **NestJS**
-- **APIs REST**, **GraphQL**, **Autenticação com JWT / OAuth2**
-- **PostgreSQL**, **MongoDB**, **Prisma ORM**, **Sequelize**
-- **Redis** para cache e gerenciamento de sessões
+### 🔌 O Que Faz
+- Executa modelos de linguagem diretamente no seu PC
+- Roda o modelo `gemma:2b` para responder interações
+- Disponibiliza agentes: **Ideator**, **Coder** e **Reviewer**
+- Interface em modal para conversa em tempo real
 
-### 🤖 Inteligência Artificial & Machine Learning
-- **PyTorch**, **LangChain**, **AutoGen**, **CrewAI**, **AgentOps**
-- Integração com ChatGPT / GPT-4 via API OpenAI
-- Embeddings, busca semântica, agentes com memória
-- Engenharia de prompts, encadeamento e uso de ferramentas (tools)
-
-### ☁️ DevOps & Cloud
-- **AWS EC2**, **Elastic Beanstalk**, **S3**, **CloudFront**
-- **Docker**, **Docker Compose**
-- **Vercel**, **Render**, **Netlify** para deploy de front-ends e serverless
-- **CI/CD** com **GitHub Actions**
-
-### 🧰 Ferramentas & Experiência
-- **Postman** para testar e documentar APIs
-- **Git** (branching, commits semânticos)
-- **GitHub** (pull requests, actions, code review)
-- **Jira**, **Trello**, **Notion** para gestão de projetos
-- **ESLint**, **Prettier**, configurações customizadas para qualidade de código
+### ⚙️ Como Funciona
+- Backend com Express escutando em `http://localhost:3001`
+- Endpoint `/api/agent` envia mensagens ao Ollama local (`localhost:11434`)
+- O modelo `gemma:2b` é usado para gerar respostas
+- Interface React com botão e modal interativo
 
 ---
 
-## 🧩 Abordagem de Engenharia
+## 🧠 Stack Técnica
 
-- 🎨 **Design-first**: Começo pela estrutura, ritmo visual e usabilidade
-- ⚙️ **Código como arquitetura**: Modular, escalável e fácil de manter
-- 👁 **Empatia com o usuário**: Cada clique, transição e detalhe importa
-- 🧪 **Testes sempre que possível**: Unitários e integrados
-- ⚡ **Performance sempre em mente**: Lazy loading, split de código e otimizações
+### 🎨 Front-End
+- **React.js**, **Vite**
+- **Styled Components**, **CSS puro**
+- Componentes dinâmicos e responsivos
 
----
+### ⚙️ Back-End
+- **Node.js**, **Express.js**
+- Integração direta com Ollama via API local
 
-## 📂 Tipos de Projetos
-
-- 🌐 Dashboards administrativos e ferramentas internas
-- 🤖 Assistentes de IA e agentes autônomos
-- 🔐 Sistemas de autenticação multiusuário
-- 📱 Web apps responsivos com fidelidade mobile
-- 🌍 CMS headless com **Sanity**, SSR/SSG com **Next.js**
+### 🤖 Ferramentas de IA
+- **Ollama** como motor de inferência local
+- Modelo **gemma:2b** com foco em NLP
+- Respostas baseadas em prompt sem precisar da nuvem
 
 ---
 
-## 🧠 Outros Destaques
+## 🗂️ Estrutura do Projeto
 
-- Utilizo **Postman** em quase todos os fluxos de integração
-- Estruturo conteúdos dinâmicos com **Sanity** para sites de marketing/blogs
-- Já implantei aplicações via **EC2 com Docker**, **Elastic Beanstalk** e **S3**
-- Otimizo tanto a **experiência do usuário (UX)** quanto a **experiência do desenvolvedor (DX)**
+```
+/api
+  └── server.js         ← Servidor Express com integração Ollama
+/src/components
+  └── AgentModal.jsx    ← UI do modal do agente com lógica de chamada
+```
 
 ---
 
-## 📫 Entre em Contato
+## 💬 Casos de Uso
+
+- Assistente no portfólio sem custo extra
+- Provas de conceito com IA local
+- Soluções offline com interatividade real
+
+---
+
+## 📫 Contato
 
 - 📧 Email: [moacirsistemax@gmail.com](mailto:moacirsistemax@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/moacir-fernandes-ba0a97a0](https://www.linkedin.com/in/moacir-fernandes-ba0a97a0/)
 - 🧑‍💻 GitHub: [@Moa-fernandes](https://github.com/Moa-fernandes)
-- 📱 WhatsApp: [+55 21 97301-9585](https://wa.me/5521973019585)
+- 💼 LinkedIn: [Moacir Fernandes](https://www.linkedin.com/in/moacir-fernandes-ba0a97a0/)
 
----
 
 ## ⚡ Vamos Construir Algo Incrível???
 
