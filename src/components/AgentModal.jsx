@@ -32,7 +32,7 @@ export default function AgentModal({ onClose }) {
     <div className="agent-modal-backdrop" onClick={onClose}>
       <div className="agent-modal" onClick={(e) => e.stopPropagation()}>
         <button className="agent-close" onClick={onClose}>×</button>
-        <h2>🧠 Talk to Agent</h2>
+        <h2>🧠 Talk to Agent <br></br> (For a better experience, hit in english!)</h2>
 
        <div className="agent-selector">
   <button
