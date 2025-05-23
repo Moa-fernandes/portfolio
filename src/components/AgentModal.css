@@ -60,25 +60,37 @@
   margin-bottom: 0.8rem;
 }
 
-.selector-btn {
-  background: linear-gradient(to top left, #151b24, #1f2a35);
-  color: white;
-  border: 2px solid #00ffc3;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  font-weight: bold;
-  box-shadow: 2px 2px 8px #00000066;
+/* Botões universais do modal */
+.selector-btn,
+.agent-send,
+.history-toggle {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
+  text-align: center;
 }
-.selector-btn:hover {
-  transform: translateY(-2px);
+
+.selector-btn:hover,
+.agent-send:hover,
+.history-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.03);
+  color: #00ffc3;
+  border-color: #00ffc3;
 }
+
 .selector-btn.active {
-  background: linear-gradient(145deg, orange, #ffae00);
-  color: black;
-  border-color: orange;
+  background: #00ffc3;
+  color: #0d1117;
+  border-color: #00ffc3;
 }
+
 
 textarea {
   width: 100%;
@@ -92,21 +104,6 @@ textarea {
   margin-bottom: 0.8rem;
 }
 
-.agent-send {
-  background: linear-gradient(145deg, #00ffc3, #58a6ff);
-  border: none;
-  padding: 0.6rem 1.5rem;
-  border-radius: 999px;
-  font-weight: bold;
-  color: rgb(198, 230, 19);
-  cursor: pointer;
-  display: block;
-  margin-left: auto;
-  transition: transform 0.3s ease;
-}
-.agent-send:hover {
-  transform: scale(1.05);
-}
 
 .agent-response {
   background: #141411;
