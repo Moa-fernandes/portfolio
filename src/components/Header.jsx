@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import './Header.css';
 import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
-import AgentModal from '../components/AgentModal'; // ajuste o caminho se necessário
+import AgentModal from '../components/AgentModal';
+import ContactForm from "../components/ContactForm"; // ajuste caminho se necessário
+
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
@@ -16,7 +18,7 @@ export default function Header() {
       <header className="navbar">
         <div className="navbar-left">
           <button className="btn-4d" onClick={() => setShowAgent(true)}>
-            🤖 Talk to Agent  🤖
+            🤖 Talk to Agent 🤖
           </button>
         </div>
 
@@ -35,21 +37,19 @@ export default function Header() {
       </header>
 
       {showModal && (
-        <div className="modal-backdrop" onClick={() => setShowModal(false)}>
-          <div className="modal-3d-contact modal-centered" onClick={e => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setShowModal(false)}>×</button>
-            <div className="modal-content">
-              <div className="modal-info">
-                <h2>📬 Hit Me Up:</h2>
-                <p><a href="mailto:moacirsistemax@gmail.com" target="_blank" rel="noopener noreferrer"><FaEnvelope /> moacirsistemax@gmail.com</a></p>
-                <p><a href="https://www.linkedin.com/in/moacir-fernandes-ba0a97a0/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a></p>
-                <p><a href="https://github.com/Moa-fernandes" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a></p>
-                <p><a href="https://wa.me/5521973019585" target="_blank" rel="noopener noreferrer"><FaWhatsapp /> WhatsApp</a></p>
-              </div>
-            </div>
-          </div>
+  <div className="modal-backdrop" onClick={() => setShowModal(false)}>
+    <div className="modal-3d-contact modal-centered" onClick={e => e.stopPropagation()}>
+      <button className="modal-close" onClick={() => setShowModal(false)}>×</button>
+      <div className="modal-content">
+        <div className="modal-form">
+          <h2>📬 Get In Touch</h2>
+          <ContactForm />
         </div>
-      )}
+      </div>
+    </div>
+  </div>
+)}
+
 
       {showAgent && <AgentModal onClose={() => setShowAgent(false)} />}
     </>

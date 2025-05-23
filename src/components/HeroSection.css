@@ -3,7 +3,7 @@
   background-color: #0d1117;
   background-image: url('/Free-Download-Gif-Pictures.gif');
   background-size: cover;
-  background-position: 5px; /* Move o GIF para a direita */
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(13, 17, 23, 0.85); /* Fundo escuro com transparência */
+  background-color: rgba(13, 17, 23, 0.85);
   z-index: -1;
 }
 
@@ -33,58 +33,88 @@
   width: 100%;
 }
 
-.hero-text {
-  color: #8b1949;
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-size: 2.8rem;
-  color: #0b315c;
-  margin-bottom: 1rem;
-}
-
-.hero-text p {
-  font-size: 1.5rem;
-}
-
-.hero-img {
-  width: 350px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+.animated-title {
+  flex: 1 1 400px;
 }
 
 .hero-title {
-  color: #ffffff; /* Branco puro */
-  font-weight: 700; /* Negrito */
+  color: #ffffff;
+  font-weight: 700;
   font-size: 4rem;
-  font-family: 'Playfair Display', serif; /* Ou outra fonte elegante */
+  font-family: 'Playfair Display', serif;
   margin-bottom: 1rem;
   animation: fadeIn 1.2s ease;
 }
 
 .hero-subtitle {
-  color: #87c9ff; /* Azul regular do GitHub */
+  color: #87c9ff;
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 0.5rem;
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 .btn-cv {
   background-color: #c0cdf8;
-  color: #c0cdf8;
+  color: #0d1117;
   padding: 0.8rem 1.9rem;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  position: relative; /* permite top/left/right/bottom */
-  margin: 0.8rem; /* controle de espaçamento externo */
+  margin-top: 1rem;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .btn-cv:hover {
   transform: scale(1.05);
   background-color: #58a6ff;
+}
+
+.hero-img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 280px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn-cv {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+  }
+
+  .hero-img {
+    width: 240px;
+  }
 }
