@@ -131,3 +131,35 @@
     width: 240px;
   }
 }
+
+
+.freq-effect {
+  display: inline-block;
+  color: #87c9ff;
+  animation: waveMotion 0.95s infinite ease-in-out;
+}
+
+@keyframes waveMotion {
+  0%   { transform: translateY(0); text-shadow: 0 0 2px #58a6ff; }
+  25%  { transform: translateY(-2px); text-shadow: 0 0 6px #58a6ff; }
+  50%  { transform: translateY(2px); text-shadow: 0 0 4px #58a6ff; }
+  75%  { transform: translateY(-1px); text-shadow: 0 0 5px #58a6ff; }
+  100% { transform: translateY(0); text-shadow: 0 0 2px #58a6ff; }
+}
+
+.underline-wave {
+  display: inline-block;
+  white-space: nowrap;
+  color: #98c9f7;
+  font-weight: bold;
+}
+
+.wave-char {
+  display: inline-block;
+  animation: waveChar 1.2s infinite ease-in-out;
+}
+
+@keyframes waveChar {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-4px); opacity: 0.7; }
+}

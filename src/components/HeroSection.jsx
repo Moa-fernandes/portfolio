@@ -7,13 +7,27 @@ export default function HeroSection() {
       <div className="hero-content">
         <div className="animated-title">
         <h1 className="hero-title">Moacir Fernandes</h1>
-        <p className="hero-subtitle">
-          _____________Developer FullStack_____________<br></br>*
-          Back-end focused in Node.js <br></br>*
-          Front-End focused in UI/UX <br></br>*
-          AI & LLM Tools<br></br>*
-          Docker, Sanity, Vercel & Postman<br></br>
-        </p>
+       <p className="hero-subtitle">
+  <span className="underline-wave">
+    {"_____________".split("").map((char, idx) => (
+      <span key={idx} className="wave-char" style={{ animationDelay: `${idx * 0.1}s` }}>
+        {char}
+      </span>
+    ))}
+    Developer FullStack
+    {"_____________".split("").map((char, idx) => (
+      <span key={`r-${idx}`} className="wave-char" style={{ animationDelay: `${idx * 0.1}s` }}>
+        {char}
+      </span>
+    ))}
+  </span><br />
+  * Back-end focused in Node.js <br />
+  * Front-End focused in UI/UX <br />
+  * AI & LLM Tools<br />
+  * Docker, Sanity, Vercel & Postman<br />
+</p>
+
+
           <a href="/Moacir-Fernandes-CV.pdf" download className="btn-cv-glass">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
               strokeWidth="1.5" stroke="currentColor" className="cv-icon">
