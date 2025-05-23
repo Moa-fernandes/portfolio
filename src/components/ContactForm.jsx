@@ -45,7 +45,7 @@ export default function ContactForm() {
       <input
         type="text"
         name="name"
-        placeholder="Seu nome"
+        placeholder="Your name"
         value={form.name}
         onChange={handleChange}
         required
@@ -53,20 +53,20 @@ export default function ContactForm() {
       <input
         type="email"
         name="email"
-        placeholder="Seu email"
+        placeholder="Your email"
         value={form.email}
         onChange={handleChange}
         required
       />
       <textarea
         name="message"
-        placeholder="Digite sua mensagem..."
+        placeholder="Say here..."
         rows={5}
         value={form.message}
         onChange={handleChange}
         required
       />
-      <button type="submit">📤 Enviar</button>
+      <button type="submit">Send</button>
     </form>
   );
 }
