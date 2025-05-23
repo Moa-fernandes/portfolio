@@ -22,6 +22,7 @@
     "three": "^0.160.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
     "@vitejs/plugin-react": "^4.0.0",
     "vite": "^5.0.0"
   }
