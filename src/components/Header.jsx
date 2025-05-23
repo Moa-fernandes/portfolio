@@ -18,7 +18,7 @@ export default function Header() {
       <header className="navbar">
         <div className="navbar-left">
           <button className="btn-4d" onClick={() => setShowAgent(true)}>
-            🤖 Talk to Agent 🤖
+                Talk to Agent / Falar com Agente de I.A
           </button>
         </div>
 

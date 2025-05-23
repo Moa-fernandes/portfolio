@@ -1,73 +1,44 @@
-
 .navbar {
-  background-color: #161b22;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1117;
   padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.navbar-left,
+.navbar-right-with-arrow {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  flex: 0 1 auto;
+  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: 'Playfair Display', serif;
-  position: relative;
+  width: 100%;
+  margin-top: 0.5rem;
 }
 
 .navbar-center ul {
   list-style: none;
-  display: flex;
-  gap: 2rem;
   padding: 0;
   margin: 0;
 }
 
-.navbar-center a {
+.navbar-center li a {
   color: #58a6ff;
-  text-decoration: none;
   font-weight: bold;
-  font-size: 1.4rem;
-  transition: color 0.3s ease;
-}
-
-.navbar-center a:hover {
-  color: #8ecbff;
-}
-
-.navbar-right {
-  position: absolute;
-  right: 2rem;
-  top: 1rem;
-}
-
-.btn-green {
-  background-color: rgba(236, 86, 99, 0.6);
-  border: none;
-  color: white;
-  padding: 0.7rem 1.4rem;
-  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: pulse 2s infinite;
+  transition: color 0.3s;
 }
 
-.btn-green:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(243, 51, 77, 0.6);
-}
-
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 rgba(46,160,67,0.4); }
-  50% { box-shadow: 0 0 10px rgba(46,160,67,0.7); }
-}
-
-
-
-@keyframes fadeInSlide {
-  from {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.navbar-center li a:hover {
+  color: white;
 }
 
 /* === MODAL === */
@@ -189,119 +160,30 @@
 
 
 .btn-4d {
-  position: relative;
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #00ffc3, #58a6ff, #ff00cc);
-  background-size: 300% 300%;
+  padding: 0.6rem 1.4rem;
+  background: transparent;
+  border: 1.5px solid white;
   color: white;
-  font-weight: 700;
-  font-size: 1rem;
-  border: none;
-  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 8px;
   cursor: pointer;
-  animation: gradientShift 6s ease infinite, floatPulse 3s ease-in-out infinite;
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.05),
-    0 10px 20px rgba(0, 255, 255, 0.2),
-    0 6px 6px rgba(0, 255, 255, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-  z-index: 100;
+  transition: all 0.2s ease;
 }
 
 .btn-4d:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.05),
-    0 15px 25px rgba(0, 255, 255, 0.3),
-    0 10px 10px rgba(0, 255, 255, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.03);
 }
 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes floatPulse {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-}
-
-
-
-/* === BOTÃO 4D SUPER ESTILIZADO === */
-.btn-4d {
-  position: relative;
-  padding: 0.9rem 2rem;
-  background: linear-gradient(135deg, #00ffc3, #58a6ff, #ff00cc);
-  background-size: 400% 400%;
-  color: white;
-  font-weight: 700;
-  font-size: 1rem;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  animation: gradientShift 6s ease infinite, floatPulse 3s ease-in-out infinite, shine 2s ease-in-out infinite;
-  box-shadow:
-    0 0 0 2px rgba(255, 255, 255, 0.1),
-    0 10px 20px rgba(0, 255, 255, 0.3),
-    0 6px 6px rgba(0, 255, 255, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  z-index: 100;
-}
-
-.btn-4d:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow:
-    0 0 0 2px rgba(255, 255, 255, 0.2),
-    0 15px 30px rgba(0, 255, 255, 0.5),
-    0 10px 10px rgba(0, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@keyframes floatPulse {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-}
-
-@keyframes shine {
-  0% {
-    filter: brightness(1);
-  }
-  50% {
-    filter: brightness(1.15);
-  }
-  100% {
-    filter: brightness(1);
-  }
-}
 
 /* === SETA 5D ANIMADA APONTANDO PARA O BOTÃO === */
 .arrow-5d {
   position: absolute;
-  left: calc(30% - 80px);
+  left: calc(18% - 80px);
   top: 90%;
-  font-size: 2rem;
-  color: #ec496c;
+  font-size: 1.1rem;
+  color: #000000;
   animation: arrowBounce 2s infinite ease-in-out, arrowGlow 4s ease-in-out infinite;
   transform: rotate(-30deg);
   z-index: 99;

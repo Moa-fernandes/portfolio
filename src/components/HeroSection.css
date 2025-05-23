@@ -54,21 +54,39 @@
   line-height: 1.4;
 }
 
-.btn-cv {
-  background-color: #c0cdf8;
-  color: #0d1117;
-  padding: 0.8rem 1.9rem;
-  border-radius: 12px;
-  text-decoration: none;
+.btn-cv-glass {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  color: #fff;
   font-weight: bold;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3), inset 0 0 5px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
-.btn-cv:hover {
+.btn-cv-glass:hover {
   transform: scale(1.05);
-  background-color: #58a6ff;
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 6px 24px rgba(0, 255, 255, 0.5);
+}
+
+/* Ícone SVG */
+.cv-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(0,255,255,0.5)); }
+  50% { filter: drop-shadow(0 0 8px rgba(0,255,255,0.8)); }
 }
 
 .hero-img {
@@ -107,11 +125,6 @@
 
   .hero-subtitle {
     font-size: 1rem;
-  }
-
-  .btn-cv {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.4rem;
   }
 
   .hero-img {
