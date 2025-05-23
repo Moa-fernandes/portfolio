@@ -7,26 +7,25 @@ const agentPrompts = {
   coder: `You are a skilled developer. Write code when needed.`,
   reviewer: `You're a UX expert. Review the following concept:`
 };
-const fullPrompt = `${agentPrompts[activeAgent]}\n${userInput}`;
-
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.post("/api/agent", async (req, res) => {
-  const { message } = req.body;
+  const { message, agent = "ideator" } = req.body;
+
+  const fullPrompt = `${agentPrompts[agent]}\n${message}`;
 
   try {
-   const response = await axios.post(
-  "http://127.0.0.1:11434/api/generate", // ← corrigido aqui
-  {
-    model: "gemma:2b",
-    prompt: message,
-    stream: false,
-  }
-);
-
+    const response = await axios.post(
+      "http://127.0.0.1:11434/api/generate",
+      {
+        model: "gemma:2b",
+        prompt: fullPrompt,
+        stream: false,
+      }
+    );
 
     const reply = response.data.response || "🤖 No response.";
     res.json({ reply });

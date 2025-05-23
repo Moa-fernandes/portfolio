@@ -11,7 +11,9 @@ export default function HeroSection() {
           _____________Developer FullStack_____________<br></br>*
           Back-end focused in Node.js <br></br>*
           Front-End focused in UI/UX <br></br>*
-          AI & LLM Tools<br></br>
+          AI & LLM Tools<br></br>*
+          Docker, Sanity, Vercel & Postman<br></br>
+
         </p>
 
           <a href="/Moacir-Fernandes-CV.pdf" download className="btn-cv">

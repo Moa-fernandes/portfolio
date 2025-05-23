@@ -69,7 +69,7 @@ export default function AgentModal({ onClose }) {
         <button className="agent-close" onClick={onClose}>×</button>
         <h2>🧠 Talk to Agent</h2>
         <button onClick={() => setHistoryVisible(!historyVisible)} className="history-toggle">
-          {historyVisible ? "Close ask's" : "See ask's?"}
+          {historyVisible ? "Close asks?" : "See asks?"}
         </button>
 
         <div className="agent-selector">
