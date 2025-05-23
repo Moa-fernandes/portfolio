@@ -21,8 +21,9 @@ export default function HeroSection() {
       </span>
     ))}
   </span><br />
-  * Back-end focused in Node.js <br />
+  * Back-End focused in Node.js (Python,TypeScript, PHP, JavaScript) <br />
   * Front-End focused in UI/UX <br />
+  * FrameWorks: React.js, Vue.js, Django, Laravel<br />
   * AI & LLM Tools<br />
   * Docker, Sanity, Vercel & Postman<br />
 </p>
