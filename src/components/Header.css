@@ -193,7 +193,7 @@
 /* === SETA 5D ANIMADA APONTANDO PARA O BOTÃO === */
 .arrow-5d {
   position: absolute;
-  left: calc(18% - 80px);
+  left: calc(18% - 20px);
   top: 90%;
   font-size: 1.1rem;
   color: #1a1919;
