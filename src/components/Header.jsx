@@ -18,8 +18,8 @@ export default function Header() {
       <header className="navbar">
         <div className="navbar-left">
           <button className="btn-4d btn-agent" onClick={() => setShowAgent(true)}>
-  Talk to Agent
-</button>
+            Agent
+          </button>
 
         </div>
 
@@ -32,7 +32,7 @@ export default function Header() {
         <div className="navbar-right-with-arrow">
           <div className="arrow-5d">➤</div>
           <button className="btn-4d" onClick={() => setShowModal(true)}>
-           hit me up!
+            Hit
           </button>
         </div>
       </header>
