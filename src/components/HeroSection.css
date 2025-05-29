@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 2rem;
   max-width: 1200px;
   width: 100%;
@@ -97,6 +97,13 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 400px) {
+  .hero-img {
+    width: 200px;
+  }
+}
+
+
 /* Responsividade para tablets */
 @media (max-width: 1024px) {
   .hero-content {
@@ -164,3 +171,4 @@
   0%, 100% { transform: translateY(0); opacity: 1; }
   50% { transform: translateY(-4px); opacity: 0.7; }
 }
+

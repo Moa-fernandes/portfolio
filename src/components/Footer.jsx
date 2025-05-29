@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="footer">
+    <div className="footer-container">
       <div className="footer-icons">
         <a href="mailto:moacirsistemax@gmail.com" target="_blank" rel="noopener noreferrer">
           <FaEnvelope />
@@ -18,6 +19,7 @@ export default function Footer() {
         <a href="https://wa.me/5521973019585" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp />
         </a>
+      </div>
       </div>
     
       <p>&copy; 2025 Moacir Fernandes. All Rights Reserved.</p>

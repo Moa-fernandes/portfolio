@@ -159,7 +159,7 @@
 }
 
 .btn-agent {
-  margin-left: 75px;   /* ou ajuste como desejar */
+  margin-left: -19px; /* ou ajuste como desejar */
   transform: translateX(-10px); /* move para a esquerda */
 }
 
@@ -180,6 +180,7 @@
   box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3), inset 0 0 5px rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  margin-right: -29px;
 }
 
 .btn-4d:hover {
@@ -303,4 +304,36 @@
 .modal-form button:hover {
   transform: scale(1.05);
   background-color: #00ffc3;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .header-logo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .header-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-button button {
+    width: 90%;
+    max-width: 250px;
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-button button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
 }

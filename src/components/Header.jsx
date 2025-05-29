@@ -32,7 +32,7 @@ export default function Header() {
         <div className="navbar-right-with-arrow">
           <div className="arrow-5d">➤</div>
           <button className="btn-4d" onClick={() => setShowModal(true)}>
-            If you have any questions, just hit me up!
+            Any questions, just hit me up!
           </button>
         </div>
       </header>
