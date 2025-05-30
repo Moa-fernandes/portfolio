@@ -21,11 +21,11 @@ export default function HeroSection() {
       </span>
     ))}
   </span><br />
-  * Back-End focused in Node.js (Python,TypeScript, PHP, JavaScript) <br />
-  * Front-End focused in UI/UX <br />
-  * FrameWorks: React.js, Vue.js, Django, Laravel<br />
-  * AI & LLM Tools<br />
-  * Docker, Sanity, Vercel, Render, Railway & Postman<br />
+Back-End: Node.js, Python, TypeScript, PHP, JavaScript. <br></br>
+Front-End: UI/UX-oriented, crafting responsive and user-centered interfaces. <br></br>
+Frameworks & Libraries: React.js, Vue.js, Django, and Laravel. <br></br>
+AI & LLM: Skilled in integrating AI solutions, including LLMs, into real-world applications. <br></br>
+DevOps & Tools: Confident with Docker workflows, Sanity CMS, and platforms like Vercel, Render, Railway, and Postman.
 </p>
 
 
