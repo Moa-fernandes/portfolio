@@ -74,6 +74,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
+  white-space: normal;
+word-break: break-word;
+text-align: center;
+overflow-wrap: break-word;
+
 }
 
 .selector-btn:hover,
@@ -124,6 +129,8 @@ textarea {
   line-height: 1.4;
   word-wrap: break-word;
   animation: appear 0.3s ease-in;
+  word-break: break-word;
+
 }
 .agent-response .user {
   background-color: #024115;
