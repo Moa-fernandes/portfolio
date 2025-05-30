@@ -25,7 +25,7 @@ export default function HeroSection() {
   * Front-End focused in UI/UX <br />
   * FrameWorks: React.js, Vue.js, Django, Laravel<br />
   * AI & LLM Tools<br />
-  * Docker, Sanity, Vercel & Postman<br />
+  * Docker, Sanity, Vercel, Render, Railway & Postman<br />
 </p>
 
 

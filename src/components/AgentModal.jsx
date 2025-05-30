@@ -33,7 +33,7 @@ export default function AgentModal({ onClose }) {
     setInput("");
 
     try {
-      const res = await fetch("/api/agent", {
+      const res = await fetch("http://localhost:3001/api/agent", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
