@@ -40,8 +40,8 @@
 
 .agent-close {
   position: absolute;
-  top: 12px;
-  right: 18px;
+  top: 8px;
+  right: 11px;
   background: none;
   color: #00ffc3;
   font-size: 1.5rem;
@@ -205,4 +205,12 @@ textarea {
 }
 .custom-scroll::-webkit-scrollbar-track {
   background: transparent;
+}
+
+@media (max-width: 768px) {
+  .agent-close {
+    top: 8px;
+    right: 8px;
+    font-size: 1.5rem;
+  }
 }
