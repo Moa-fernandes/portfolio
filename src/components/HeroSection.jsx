@@ -6,29 +6,27 @@ export default function HeroSection() {
     <section className="hero-section">
       <div className="hero-content">
         <div className="animated-title">
-        <h1 className="hero-title">Moacir Fernandes</h1>
-       <p className="hero-subtitle">
+        <h1 className="hero-title">Moacir Fernandes</h1> <br></br>
+      <p className="hero-subtitle">
   <span className="underline-wave">
-    {"_____________".split("").map((char, idx) => (
+    {"".split("").map((char, idx) => (
       <span key={idx} className="wave-char" style={{ animationDelay: `${idx * 0.1}s` }}>
         {char}
       </span>
-    ))}
+    ))} 
     Developer FullStack
-    {"_____________".split("").map((char, idx) => (
+    {"".split("").map((char, idx) => (
       <span key={`r-${idx}`} className="wave-char" style={{ animationDelay: `${idx * 0.1}s` }}>
         {char}
       </span>
     ))}
   </span><br />
 Back-End: Node.js, Python, TypeScript, PHP, JavaScript. <br></br>
-Front-End: UI/UX-oriented, crafting responsive and user-centered interfaces. <br></br>
+Front-End: UI/UX-oriented. <br></br>
 Frameworks & Libs: React.js, Vue.js, Django, Laravel. <br></br>
-AI & LLM: Skilled in integrating AI solutions, including LLMs, into real-world applications. <br></br>
-DevOps: Confident with Docker workflows, Sanity CMS, and platforms like Vercel/Render/Railway/Postman.
+AI & LLM <br></br>
+DevOps: Confident with Docker, Sanity CMS, Vercel/Render/Railway/Postman.
 </p>
-
-
           <a href="/Moacir-Fernandes-CV.pdf" download className="btn-cv-glass">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
               strokeWidth="1.5" stroke="currentColor" className="cv-icon">

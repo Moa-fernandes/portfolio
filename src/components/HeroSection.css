@@ -9,6 +9,8 @@
   justify-content: center;
   position: relative;
   z-index: 1;
+    align-items: center; /* Adicionado */
+
 }
 
 .hero-section::before {
@@ -39,6 +41,9 @@
   max-width: 1000px;
   width: 100%;
   margin-top: 10px;
+  align-items: center; /* Garante centralização horizontal */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 2rem; /* Garante espaçamento interno responsivo */
 }
 
 .animated-title {
@@ -47,9 +52,9 @@
 
 .hero-title {
   color: #ffffff;
-  font-weight: 10;
-  margin-top: -20px;
-  font-size: 4rem;
+  font-weight: 8px;
+  margin-top: -50px;
+  font-size: 3rem;
   font-family: 'Playfair Display', serif;
   margin-bottom: 1rem;
   animation: fadeIn 1.2s ease;
@@ -57,10 +62,10 @@
 
 .hero-subtitle {
   color: #87c9ff;
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 100;
   margin-top: -1.6rem;
-  line-height: 1.4;
+  line-height: 1.1;
 }
 
 .btn-cv-glass {
@@ -100,12 +105,10 @@
 }
 
 .hero-img {
-  margin-top: -120px;
-  width: 290px;
-  border-radius: 20px;
+  margin-top: -70px;
+  width: 300px;
+  border-radius: 500px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-  flex-shrink: 0;
-  margin-right: 0px;
 }
 
 @media (max-width: 400px) {
